@@ -1,3 +1,5 @@
 import streamlit as st
 
-set.set
+set.set_page_config(
+    
+)
