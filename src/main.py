@@ -32,4 +32,4 @@ with tab2:
     st.info("This section will let the user upload, view, and edit transaction data")
 
 with tab3:
-    st.header()
+    st.header("Budget Goals")
