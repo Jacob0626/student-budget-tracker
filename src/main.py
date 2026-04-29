@@ -28,4 +28,5 @@ with tab1:
     st.info("This section will shoe income, expenses, money left, and spending charts>")
 
 with tab2:
-    st.
+    st.header("Transactions")
+    st.info("")
