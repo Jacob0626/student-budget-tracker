@@ -25,4 +25,4 @@ tab1, tab2, tab3, tab4 = st.tabs([
 
 with tab1:
     st.header("Dashboard")
-    st.info("This section will let ")
+    st.info("This section will shoe income, expenses, money")
