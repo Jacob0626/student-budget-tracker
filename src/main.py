@@ -13,3 +13,4 @@ st.write('''
 This app will help students track income, expenses, budgets, and savings goals.
 Users will be able to upload transcactions data, view summaries, analyze spendings habits, and save budget settings.
 ''')
+
