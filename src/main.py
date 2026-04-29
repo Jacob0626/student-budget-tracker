@@ -16,4 +16,4 @@ Users will be able to upload transcactions data, view summaries, analyze spendin
 
 st.divider()
 
-tab1
+tab1, tab2, 
