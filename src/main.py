@@ -16,4 +16,6 @@ Users will be able to upload transcactions data, view summaries, analyze spendin
 
 st.divider()
 
-tab1, tab2, 
+tab1, tab2, tab3, tab4 = st.tabs([
+    
+])
