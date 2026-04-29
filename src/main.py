@@ -33,3 +33,4 @@ with tab2:
 
 with tab3:
     st.header("Budget Goals")
+    st.info("")
