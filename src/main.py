@@ -33,4 +33,4 @@ with tab2:
 
 with tab3:
     st.header("Budget Goals")
-    st.info("")
+    st.info("This section will let the user set budgets ")
