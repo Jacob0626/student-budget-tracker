@@ -25,4 +25,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
 
 with tab1:
     st.header("Dashboard")
-    st.info("This section will shoe income, expenses, money")
+    st.info("This section will shoe income, expenses, money left, and spending charts>")
+
+with tab2:
+    st.
