@@ -29,4 +29,4 @@ with tab1:
 
 with tab2:
     st.header("Transactions")
-    st.info("This section will let the user ")
+    st.info("This section will let the user upload, view, and edit")
