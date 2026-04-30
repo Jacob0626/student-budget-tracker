@@ -37,4 +37,4 @@ with tab3:
 
 with tab4:
     st.header("About")
-    st.info("This project is being built woth Python, Streamlit, Pandas, and GitHub.")
+    st.info("This project is being built with Python, Streamlit, Pandas, and GitHub.")
