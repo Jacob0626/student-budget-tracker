@@ -11,7 +11,7 @@ st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
 This app will help students track income, expenses, budgets, and savings goals.
-Users will be able to upload transcactions data, view summaries, analyze spendings habits, and save budget settings.
+Users will be able to upload transcaction data, view summaries, analyze spending habits, and save budget settings.
 ''')
 
 st.divider()
