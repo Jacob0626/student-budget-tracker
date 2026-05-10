@@ -79,6 +79,8 @@ if page == "Dashboard":
         st.metric("Total Expenses", f"${summary['expenses']:.2f}")
     with col3:
         st.metric("Money Left", f"${summary['mony_left']:.2f}")
+    with col4:
+        st.
 
 elif page == "Transactions":
     st.header("Transactions")
