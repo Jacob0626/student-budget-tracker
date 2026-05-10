@@ -54,6 +54,8 @@ def get_spending_by_category(df: pd.DataFrame) -> pd.DataFrame:
     
     category_summary = expenses_df.groupby("category", as_index=False)["amount"].sum()
     category_summary = category_summary.sort_values("amount", ascending=False)
+    
+    return category_summary
 
 st.title("Student Budget & Spending Habit Tracker")
 
