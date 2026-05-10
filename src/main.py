@@ -93,7 +93,8 @@ with st.sidebar:
         ["Dashboard", "Transactions", "Budget Goals", "About"]
     )
     
-    st.divider
+    st.divider()
+    st.header
 
 # Main page content
 if page == "Dashboard":
