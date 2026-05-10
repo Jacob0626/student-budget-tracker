@@ -35,6 +35,9 @@ def load_transactions(file_source) -> pd.DataFrame:
     else:
         df= pd.read_csv(file_source)
     
+    if not validate_columns(df):
+        st.error
+    
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
     
