@@ -44,6 +44,7 @@ elif page == "Transactions":
     st.header("Transactions")
     st.info("This section will let the user upload, view, and edit transaction data.")
     
+    df = pd.read
 
 
 elif page == "Budget Goals":
