@@ -32,4 +32,4 @@ if page == "Dashboard":
 
 elif page == "Transactions":
     st.header("Transactions")
-    st.info
+    st.info("")
