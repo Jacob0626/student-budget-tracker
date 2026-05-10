@@ -164,7 +164,7 @@ elif page == "Transactions":
     st.info("This section will let the user upload, view, and edit transaction data.")
     
     df = load_transactions("sample_transactions.csv")
-    fil
+    filtered_df = filtered_trans
     st.subheader("Sample Transactions Data")
     st.dataframe(df)
 
