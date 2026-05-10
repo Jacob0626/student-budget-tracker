@@ -71,7 +71,9 @@ if page == "Dashboard":
     df = load_transactions("sample_transactions.csv")
     summary = calculate_summary(df)
     
-    col1, col2, col3, col4 = st.colu
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with
 
 elif page == "Transactions":
     st.header("Transactions")
