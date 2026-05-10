@@ -214,7 +214,8 @@ elif page == "Transactions":
         use_container_width=True
     )
     
-    ifst.button("Save Edited")
+    ifst.button("Save Edited Transactions")
+    save_
     st.dataframe(filtered_df)
 
 
