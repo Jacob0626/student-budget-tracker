@@ -25,3 +25,6 @@ with st.sidebar:
         ["Dashboard", "Transactions", "Budget Goals", "About"]
     )
 
+# Main page content
+if page == "Dashboard":
+    st.header
