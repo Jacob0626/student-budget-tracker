@@ -126,7 +126,8 @@ if page == "Dashboard":
     fig = px.bar(
         type_summary,
         x="type",
-        y
+        y="amount",
+        title=""
     )
 
 
