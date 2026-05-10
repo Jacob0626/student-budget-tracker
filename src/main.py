@@ -106,7 +106,6 @@ with st.sidebar:
     
     category_filter = st.selectbox(
         "Category",
-        ["All", "Income", "Food", "Gas", "Subscriptions", "Groceries", "Entertainment"]
     )
 
 # Main page content
