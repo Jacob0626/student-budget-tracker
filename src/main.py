@@ -129,6 +129,9 @@ if page == "Dashboard":
         st.metric("Savings Rate", f"{summary['savings_rate']:.1f}%")
     
     st.divider()
+    
+    if transaction_type != "Income":
+        
     st.subheader("Spending by Category")
     
     category_summary = get_spending_by_category(filtered_df)
