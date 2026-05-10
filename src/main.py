@@ -16,25 +16,4 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 
 st.divider()
 
-tab1, tab2, tab3, tab4 = st.tabs([
-    "Dashboard",
-    "Transactions",
-    "Budget Goals",
-    "About"
-])
-
-with tab1:
-    st.header("Dashboard")
-    st.info("This section will show income, expenses, money left, and spending charts")
-
-with tab2:
-    st.header("Transactions")
-    st.info("This section will let the user upload, view, and edit transaction data")
-
-with tab3:
-    st.header("Budget Goals")
-    st.info("This section will let the user set budgets and saving goals.")
-
-with tab4:
-    st.header("About")
-    st.info("This project is being built with Python, Streamlit, Pandas, and GitHub.")
+# 
