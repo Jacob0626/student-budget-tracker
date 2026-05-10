@@ -14,7 +14,8 @@ st.set_page_config(
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def get_data_path(filname: str) -> str:
-    """"""
+    """Return the full path for a file inside the data folder."""
+    return os.path
 
 st.title("Student Budget & Spending Habit Tracker")
 
