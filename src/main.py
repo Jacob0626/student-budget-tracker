@@ -103,7 +103,7 @@ if uploaded_file is not None:
     st.sidebar.success("Uploaded CSV loaded successfully.")
 else:
     df = load_transactions("sample_transactions.csv")
-    
+    st.sidebar.info("Using sample transaction data.")
 
 # Sidebar navigation menu
 with st.sidebar:
