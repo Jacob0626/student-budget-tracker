@@ -101,7 +101,9 @@ with st.sidebar:
         ["All", "Income", "Expense"]
     )
     
-    category_filter
+    category_filter = st.selectbox(
+        
+    )
 
 # Main page content
 if page == "Dashboard":
