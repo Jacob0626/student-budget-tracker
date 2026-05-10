@@ -207,6 +207,8 @@ elif page == "Transactions":
     filtered_df = filter_transactions(df, transaction_type, category_filter)
     
     st.subheader("Sample Transactions Data")
+    
+    
     st.dataframe(filtered_df)
 
 
