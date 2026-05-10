@@ -59,7 +59,9 @@ def get_spending_by_category(df: pd.DataFrame) -> pd.DataFrame:
 
 def get_income_expense_summary(df: pd.DataFrame) -> pd.DataFrame:
     """Group transactions by type to compare income and expenses."""
-    type_summary = df.groupby("type", as_index=False)["amount"]
+    type_summary = df.groupby("type", as_index=False)["amount"].sum()
+    
+    return type_summary
 
 
 st.title("Student Budget & Spending Habit Tracker")
