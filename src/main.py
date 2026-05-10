@@ -67,6 +67,8 @@ with st.sidebar:
 if page == "Dashboard":
     st.header("Dashboard")
     st.info("This section will show income, expenses, money left, and spending charts.")
+    
+    
 
 elif page == "Transactions":
     st.header("Transactions")
