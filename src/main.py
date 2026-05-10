@@ -113,7 +113,7 @@ if page == "Dashboard":
     
     df = load_transactions("sample_transactions.csv")
     filtered_df = filter_transactions(df, transaction_type, category_filter)
-    summary = calculate_summary(fil)
+    summary = calculate_summary(filtered_df)
     
     col1, col2, col3, col4 = st.columns(4)
     
