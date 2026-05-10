@@ -19,7 +19,8 @@ def get_data_path(filename: str) -> str:
     return os.path.join(APP_PATH, "data", filename)
 
 def validate_columns(df: pd.DataFrame) -> bool:
-    """"""
+    """Check if the transaction data has the required columns."""
+    
 
 def load_transactions(file_source) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
