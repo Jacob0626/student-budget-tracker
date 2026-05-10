@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state = "expanded"
 )
 
-APP
+APP_PATH
 
 st.title("Student Budget & Spending Habit Tracker")
 
