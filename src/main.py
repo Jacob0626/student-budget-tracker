@@ -101,7 +101,7 @@ with st.sidebar:
         ["All", "Income", "Expense"]
     )
     
-    category
+    category_filter
 
 # Main page content
 if page == "Dashboard":
