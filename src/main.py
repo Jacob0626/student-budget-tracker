@@ -40,4 +40,5 @@ elif page == "Budget Goals":
 
 elif page == "About":
     st.header("About")
-    st.info("")
+    st.info("This project is being built with Python, Streamlit, Pandas, and GitHub.")
+    
