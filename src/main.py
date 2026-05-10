@@ -69,6 +69,8 @@ if page == "Dashboard":
     st.info("This section will show income, expenses, money left, and spending charts.")
     
     df = load_transactions("sample_transactions.csv")
+    summary = calculate_summary(df)
+    
 
 elif page == "Transactions":
     st.header("Transactions")
