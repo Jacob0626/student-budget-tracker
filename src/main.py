@@ -128,9 +128,9 @@ if page == "Dashboard":
         x="type",
         y="amount",
         title="Income Compared to Expenses",
-        text_auto=""
+        text_auto=".2f"
     )
-
+    
 
 
 elif page == "Transactions":
