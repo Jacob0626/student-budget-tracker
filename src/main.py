@@ -36,7 +36,8 @@ def load_transactions(file_source) -> pd.DataFrame:
         df= pd.read_csv(file_source)
     
     if not validate_columns(df):
-        st.error("The CSV file must include these columns: date, description")
+        st.error("The CSV file must include these columns: date, description, category, type, amount.")
+        sr
     
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
