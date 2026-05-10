@@ -19,7 +19,7 @@ def get_data_path(filename: str) -> str:
     return os.path.join(APP_PATH, "data", filename)
 
 
-def load_transactions(filename: str) -> pd.DataFrame:
+def load_transactions(file_source) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
     df = pd.read_csv(get_data_path(filename))
     
