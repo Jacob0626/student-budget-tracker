@@ -30,4 +30,6 @@ if page == "Dashboard":
     st.header("Dashboard")
     st.info("This section will show income, expenses, money left, and spending charts.")
 
-elif page == "Transactions"
+elif page == "Transactions":
+    st.header("Transactions")
+    st.info
