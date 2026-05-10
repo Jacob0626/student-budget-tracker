@@ -23,6 +23,8 @@ def load_transactions(file_source) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
     if isinstance(file_source, str):
         df = pd.read_csv(get_data_path(file_source))
+    else:
+        df= pd
     
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
