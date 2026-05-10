@@ -18,4 +18,4 @@ st.divider()
 
 # Sidebar navigation menu
 with st.sidebar:
-    st.header()
+    st.header("Navigation")
