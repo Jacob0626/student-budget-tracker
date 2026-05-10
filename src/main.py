@@ -100,6 +100,8 @@ with st.sidebar:
         "transaction Type",
         ["All", "Income", "Expense"]
     )
+    
+    category
 
 # Main page content
 if page == "Dashboard":
