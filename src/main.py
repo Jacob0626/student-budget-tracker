@@ -21,4 +21,6 @@ with st.sidebar:
     st.header("Navigation")
     
     page = st.radio(
+        "Go to",
+        []
     )
