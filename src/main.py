@@ -214,9 +214,9 @@ elif page == "Transactions":
         use_container_width=True
     )
     
-    ifst.button("Save Edited Transactions")
+    i fst.button("Save Edited Transactions")
     save_transactions(edited_df, "saved_transactions.csv")
-    st.success("Edited transactions saved succe")
+    st.success("Edited transactions saved successfully")
 
 
 elif page == "Budget Goals":
