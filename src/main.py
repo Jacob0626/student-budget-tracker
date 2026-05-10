@@ -28,4 +28,4 @@ with st.sidebar:
 # Main page content
 if page == "Dashboard":
     st.header("Dashboard")
-    st.info("This section")
+    st.info("This section will show income, expenses, money left, and spending charts.")
