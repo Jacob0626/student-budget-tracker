@@ -36,3 +36,4 @@ elif page == "Transactions":
 
 elif page == "Budget Goals":
     st.header("Budget Goals")
+    st.info("")
