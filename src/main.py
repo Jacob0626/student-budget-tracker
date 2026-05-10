@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 import os 
 import json
-import plotly.expressa as
+import plotly.express as px 
 
 
 st.set_page_config(
