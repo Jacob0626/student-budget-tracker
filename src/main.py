@@ -94,7 +94,7 @@ with st.sidebar:
     )
     
     st.divider()
-    st.header
+    st.header("Filters")
 
 # Main page content
 if page == "Dashboard":
