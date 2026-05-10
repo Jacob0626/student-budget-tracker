@@ -98,7 +98,7 @@ uploaded_file = st.sidebar.file_uploader(
     type=["csv"]
 )
 
-if up
+if uploaded_file is not None:
 
 # Sidebar navigation menu
 with st.sidebar:
