@@ -74,7 +74,7 @@ if page == "Dashboard":
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        st.metric("T")
+        st.metric("Total Income", f"")
 
 elif page == "Transactions":
     st.header("Transactions")
