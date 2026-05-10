@@ -28,3 +28,4 @@ with st.sidebar:
 # Main page content
 if page == "Dashboard":
     st.header("Dashboard")
+    st.info("This section")
