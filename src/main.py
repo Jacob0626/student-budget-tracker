@@ -105,7 +105,8 @@ if page == "Dashboard":
         fig = px.bar(
             category_summary,
             x="category",
-            
+            y="amount",
+            title=
         )
 
 
