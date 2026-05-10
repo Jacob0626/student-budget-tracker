@@ -41,7 +41,7 @@ def calculate_summary(df: pd.DataFrame) -> dict:
     return {
         "income": income,
         "expenses": expenses,
-        "money_left": moeny_left,
+        "money_left": money_left,
         "savings_rate": savings_rate
     }
 
