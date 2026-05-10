@@ -19,7 +19,9 @@ def get_data_path(filename: str) -> str:
 
 def load_transactions(filename: str) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
-    df = pd.read_cvs(get_data_path)
+    df = pd.read_cvs(get_data_path(filename))
+    
+    df
 
 st.title("Student Budget & Spending Habit Tracker")
 
