@@ -63,6 +63,9 @@ def get_income_expense_summary(df: pd.DataFrame) -> pd.DataFrame:
     
     return type_summary
 
+def filter_transactions(df: pd.DataFrame, selected_type: str, selected_category: str) -> pd.DataFrame:
+    """"""
+
 
 st.title("Student Budget & Spending Habit Tracker")
 
