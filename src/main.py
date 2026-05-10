@@ -94,7 +94,8 @@ if page == "Dashboard":
     with col4:
         st.metric("Savings Rate", f"{summary['savings_rate']:.1f}%")
     
-    
+    st.divider()
+    st.subheader
 
 
 
