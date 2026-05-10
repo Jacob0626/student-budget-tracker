@@ -37,7 +37,8 @@ def calculate_summary(df: pd.DataFrame) -> dict:
     if income > 0:
         savings_rate = (money_left / income) * 100
     else:
-        savings_
+        savings_rate = 0
+    return {}
 
 st.title("Student Budget & Spending Habit Tracker")
 
