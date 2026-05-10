@@ -98,6 +98,8 @@ uploaded_file = st.sidebar.file_uploader(
     type=["csv"]
 )
 
+if up
+
 # Sidebar navigation menu
 with st.sidebar:
     st.header("Navigation")
