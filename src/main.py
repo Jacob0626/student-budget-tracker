@@ -32,4 +32,5 @@ if page == "Dashboard":
 
 elif page == "Transactions":
     st.header("Transactions")
-    st.info("")
+    st.info("This section will let the user upload, view, and edit transaction data.")
+    
