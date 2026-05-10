@@ -93,7 +93,7 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 
 st.divider()
 
-uploaded
+uploaded_file = st.sidebar.file
 
 # Sidebar navigation menu
 with st.sidebar:
