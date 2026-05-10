@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state = "expanded"
 )
 
-APP_PATH
+APP_PATH = os.path.dirname(os.path)
 
 st.title("Student Budget & Spending Habit Tracker")
 
