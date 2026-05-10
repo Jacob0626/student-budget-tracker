@@ -20,4 +20,5 @@ st.divider()
 with st.sidebar:
     st.header("Navigation")
     
-    page = st
+    page = st.radio(
+    )
