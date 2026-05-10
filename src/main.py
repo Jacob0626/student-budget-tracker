@@ -85,7 +85,7 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 st.divider()
 
 df = load_transactions("sample_transactions.csv")
-category_options = 
+category_options = ["All"] + sorted(df)
 
 # Sidebar navigation menu
 with st.sidebar:
