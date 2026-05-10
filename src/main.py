@@ -95,6 +95,10 @@ with st.sidebar:
     
     st.divider()
     st.header("Filters")
+    
+    transaction_type = st.selectbox(
+        
+    )
 
 # Main page content
 if page == "Dashboard":
