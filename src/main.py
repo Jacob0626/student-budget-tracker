@@ -42,7 +42,7 @@ def calculate_summary(df: pd.DataFrame) -> dict:
         "income": income,
         "expenses": expenses,
         "money_left": moeny_left,
-        "savings_rate": 
+        "savings_rate": savings_rate
     }
 
 st.title("Student Budget & Spending Habit Tracker")
