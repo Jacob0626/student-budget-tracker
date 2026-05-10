@@ -136,7 +136,7 @@ if page == "Dashboard":
         category_summary = get_spending_by_category(filtered_df)
         
         if category_summary.empty:
-            st.warning("No expense data avai to show")
+            st.warning("No expense data available to show")
         else:
             fig = px.bar(
                 category_summary,
