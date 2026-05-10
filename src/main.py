@@ -99,6 +99,8 @@ uploaded_file = st.sidebar.file_uploader(
 )
 
 if uploaded_file is not None:
+    df = load_transactions(uploaded_file)
+    st
 
 # Sidebar navigation menu
 with st.sidebar:
