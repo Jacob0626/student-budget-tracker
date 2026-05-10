@@ -105,7 +105,7 @@ else:
     df = load_transactions("sample_transactions.csv")
     st.sidebar.info("Using sample transaction data.")
 
-category_options = ["A"]
+category_options = ["All"] + sorted(df)
 
 # Sidebar navigation menu
 with st.sidebar:
