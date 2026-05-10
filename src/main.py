@@ -213,6 +213,8 @@ elif page == "Transactions":
         num_rows="dynamic",
         use_container_width=True
     )
+    
+    ifst.button
     st.dataframe(filtered_df)
 
 
