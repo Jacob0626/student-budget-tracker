@@ -78,7 +78,7 @@ if page == "Dashboard":
     with col2:
         st.metric("Total Expenses", f"${summary['expenses']:.2f}")
     with col3:
-        st.metric("Money Left", f"${summary['mony_left']:.2f}")
+        st.metric("Money Left", f"${summary['money_left']:.2f}")
     with col4:
         st.metric("Savings Rate", f"${summary['savings_rate']:.2f}")
         
