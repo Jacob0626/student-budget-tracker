@@ -102,6 +102,7 @@ with st.sidebar:
     )
     
     category_filter = st.selectbox(
+        "Category",
         
     )
 
