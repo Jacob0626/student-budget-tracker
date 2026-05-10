@@ -207,7 +207,7 @@ elif page == "Transactions":
     filtered_df = filter_transactions(df, transaction_type, category_filter)
     
     st.subheader("Sample Transactions Data")
-    st.warming("Saving will dave only the currently filtered rows.")
+    st.warning("Saving will dave only the currently filtered rows.")
     
     edited_df = st.data_editor(
         filtered_df,
