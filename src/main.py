@@ -97,7 +97,10 @@ if page == "Dashboard":
     st.divider()
     st.subheader("Spending by Category")
     
-    category_summary = get_spending_by_category()
+    category_summary = get_spending_by_category(df)
+    
+    if category_summary.empty:
+        
 
 
 
