@@ -124,7 +124,9 @@ if page == "Dashboard":
     type_summary = get_income_expense_summary(df)
     
     fig = px.bar(
-        type_summary
+        type_summary,
+        x="type",
+        y
     )
 
 
