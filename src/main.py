@@ -215,7 +215,7 @@ elif page == "Transactions":
     )
     
     ifst.button("Save Edited Transactions")
-    save_transactions(edited_df, "saved_transa")
+    save_transactions(edited_df, "saved_transactions.csv")
     st.dataframe(filtered_df)
 
 
