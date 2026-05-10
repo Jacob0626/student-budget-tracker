@@ -95,7 +95,7 @@ if page == "Dashboard":
         st.metric("Savings Rate", f"{summary['savings_rate']:.1f}%")
     
     st.divider()
-    st.subheader
+    st.subheader("Spending by Category")
 
 
 
