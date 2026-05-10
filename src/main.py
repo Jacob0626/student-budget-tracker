@@ -216,7 +216,7 @@ elif page == "Transactions":
     
     ifst.button("Save Edited Transactions")
     save_transactions(edited_df, "saved_transactions.csv")
-    st.s
+    st.success()
 
 
 elif page == "Budget Goals":
