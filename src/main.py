@@ -48,6 +48,9 @@ def calculate_summary(df: pd.DataFrame) -> dict:
         "savings_rate": savings_rate
     }
 
+def get_spending_by_category(df: pd.DataFrame) -> pd.DataFrame:
+    """"""
+
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
