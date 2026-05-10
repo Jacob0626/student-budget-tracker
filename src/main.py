@@ -92,6 +92,8 @@ with st.sidebar:
         "Go to",
         ["Dashboard", "Transactions", "Budget Goals", "About"]
     )
+    
+    st.divider
 
 # Main page content
 if page == "Dashboard":
