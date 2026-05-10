@@ -27,4 +27,4 @@ with st.sidebar:
 
 # Main page content
 if page == "Dashboard":
-    st.header
+    st.header("Dashboard")
