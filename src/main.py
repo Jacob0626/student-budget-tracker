@@ -25,6 +25,8 @@ def validate_columns(df: pd.DataFrame) -> bool:
     for column in required_columns:
         if column not in df.columns:
             return False
+    
+    return True
 
 def load_transactions(file_source) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
