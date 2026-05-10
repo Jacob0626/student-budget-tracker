@@ -97,7 +97,8 @@ with st.sidebar:
     st.header("Filters")
     
     transaction_type = st.selectbox(
-        
+        "transaction Type",
+        ["All"]
     )
 
 # Main page content
