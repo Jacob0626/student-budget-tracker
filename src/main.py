@@ -22,7 +22,7 @@ def load_transactions(filename: str) -> pd.DataFrame:
     df = pd.read_cvs(get_data_path(filename))
     
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df["amount"]
+    df["amount"] = pd.to_numeric(df["amount"])
 
 st.title("Student Budget & Spending Habit Tracker")
 
