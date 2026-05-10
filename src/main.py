@@ -110,7 +110,7 @@ if page == "Dashboard":
             text_auto=".2f"
         )
         
-        st.plotly_chart()
+        st.plotly_chart(fig, use_container_width=True)
 
 
 
