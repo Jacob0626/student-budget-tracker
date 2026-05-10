@@ -165,8 +165,9 @@ elif page == "Transactions":
     
     df = load_transactions("sample_transactions.csv")
     filtered_df = filtered_transactions(df, transaction_type, category_filter)
+    
     st.subheader("Sample Transactions Data")
-    st.dataframe(df)
+    st.dataframe()
 
 
 elif page == "Budget Goals":
