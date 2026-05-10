@@ -120,6 +120,8 @@ if page == "Dashboard":
         st.plotly_chart(fig, use_container_width=True)
     
     st.subheader("Income vs Expenses")
+    
+    type_summary = get_income_expense_summary
 
 
 
