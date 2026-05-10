@@ -131,6 +131,7 @@ if page == "Dashboard":
         text_auto=".2f"
     )
     
+    st.plotly_chart
 
 
 elif page == "Transactions":
