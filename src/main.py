@@ -22,5 +22,5 @@ with st.sidebar:
     
     page = st.radio(
         "Go to",
-        []
+        ["Dashboard"]
     )
