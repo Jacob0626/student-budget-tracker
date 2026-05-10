@@ -96,6 +96,8 @@ if page == "Dashboard":
     
     st.divider()
     st.subheader("Spending by Category")
+    
+    category_summary = get_
 
 
 
