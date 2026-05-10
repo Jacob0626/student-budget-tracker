@@ -98,7 +98,7 @@ with st.sidebar:
     
     transaction_type = st.selectbox(
         "transaction Type",
-        ["All", "Income"]
+        ["All", "Income", "Expense"]
     )
 
 # Main page content
