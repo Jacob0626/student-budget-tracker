@@ -94,7 +94,7 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 st.divider()
 
 uploaded_file = st.sidebar.file_uploader(
-    
+    "Upload transaction CSV"
 )
 
 # Sidebar navigation menu
