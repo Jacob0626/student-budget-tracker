@@ -131,7 +131,7 @@ if page == "Dashboard":
     st.divider()
     
     if transaction_type != "Income":
-        
+        st.subheader
     st.subheader("Spending by Category")
     
     category_summary = get_spending_by_category(filtered_df)
