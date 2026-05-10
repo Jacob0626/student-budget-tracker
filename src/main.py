@@ -21,7 +21,7 @@ def load_transactions(filename: str) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
     df = pd.read_cvs(get_data_path(filename))
     
-    df["date"] = pd.to_
+    df["date"] = pd.to_datetime(df[""])
 
 st.title("Student Budget & Spending Habit Tracker")
 
