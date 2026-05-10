@@ -49,7 +49,8 @@ def calculate_summary(df: pd.DataFrame) -> dict:
     }
 
 def get_spending_by_category(df: pd.DataFrame) -> pd.DataFrame:
-    """"""
+    """Group expense transactions by category."""
+    expenses
 
 st.title("Student Budget & Spending Habit Tracker")
 
