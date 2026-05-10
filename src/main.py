@@ -30,7 +30,7 @@ def load_transactions(filename: str) -> pd.DataFrame:
 
 def calculate_summary(df: pd.DataFrame) -> dict:
     """Calculate basic income and expense summary values."""
-    income = df[df["type"]]
+    income = df[df["type"] == "Income"]["amount"]
 
 st.title("Student Budget & Spending Habit Tracker")
 
