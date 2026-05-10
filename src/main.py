@@ -20,4 +20,4 @@ st.divider()
 with st.sidebar:
     st.header("Navigation")
     
-    page = st.sidebar
+    page = st
