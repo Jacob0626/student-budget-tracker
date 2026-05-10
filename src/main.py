@@ -106,7 +106,8 @@ if page == "Dashboard":
             category_summary,
             x="category",
             y="amount",
-            title="Total"
+            title="Total Expenses by Category",
+            text_auto=".2f"
         )
 
 
