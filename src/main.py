@@ -31,7 +31,7 @@ def load_transactions(file_source) -> pd.DataFrame:
     
     df["description"] = df["description"].astype(str).str.strip()
     df["category"] = df["category"].astype(str).str.strip()
-    df["type"] = df["type"].astype
+    df["type"] = df["type"].astype(str).str.s
     df = df.dropna(subset=["date", "amount"])
     
     return df
