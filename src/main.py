@@ -100,7 +100,8 @@ uploaded_file = st.sidebar.file_uploader(
 
 if uploaded_file is not None:
     df = load_transactions(uploaded_file)
-    st.sidebar.success
+    st.sidebar.success("Uploaded CSV loaded successfully.")
+    
 
 # Sidebar navigation menu
 with st.sidebar:
