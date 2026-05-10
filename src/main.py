@@ -93,6 +93,7 @@ if page == "Dashboard":
         st.metric("Money Left", f"${summary['money_left']:.2f}")
     with col4:
         st.metric("Savings Rate", f"{summary['savings_rate']:.1f}%")
+        
 
 
 
