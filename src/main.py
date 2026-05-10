@@ -28,6 +28,9 @@ def load_transactions(filename: str) -> pd.DataFrame:
     
     return df
 
+def calculate_summary(df: pd.DataFrame) -> dict:
+    """"""
+
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
