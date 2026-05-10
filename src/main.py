@@ -146,7 +146,7 @@ if page == "Dashboard":
     
     st.subheader("Income vs Expenses")
     
-    type_summary = get_income_expense_summary(df)
+    type_summary = get_income_expense_summary(filtered_df)
     
     fig = px.bar(
         type_summary,
