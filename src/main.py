@@ -133,20 +133,20 @@ if page == "Dashboard":
     if transaction_type != "Income":
         st.subheader("Spending by Category")
     
-    category_summary = get_spending_by_category(filtered_df)
-    
-    if category_summary.empty:
-        st.warning("No expense data avaliable to show")
-    else:
-        fig = px.bar(
-            category_summary,
-            x="category",
-            y="amount",
-            title="Total Expenses by Category",
-            text_auto=".2f"
-        )
+        category_summary = get_spending_by_category(filtered_df)
         
-        st.plotly_chart(fig, use_container_width=True)
+        if category_summary.empty:
+            st.warning("No expense data avaliable to show")
+        else:
+            fig = px.bar(
+                category_summary,
+                x="category",
+                y="amount",
+                title="Total Expenses by Category",
+                text_auto=".2f"
+            )
+            
+            st.plotly_chart(fig, use_container_width=True)
     
     st.subheader("Income vs Expenses")
     
