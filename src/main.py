@@ -44,7 +44,9 @@ elif page == "Transactions":
     st.header("Transactions")
     st.info("This section will let the user upload, view, and edit transaction data.")
     
-    df = pd.read_csv(get_data_path(""))
+    df = pd.read_csv(get_data_path("sample_transactions.csv"))
+    
+    st.
 
 
 elif page == "Budget Goals":
