@@ -34,4 +34,5 @@ elif page == "Transactions":
     st.header("Transactions")
     st.info("This section will let the user upload, view, and edit transaction data.")
 
-elif page == "Budget"
+elif page == "Budget Goals":
+    st.header("Budget Goals")
