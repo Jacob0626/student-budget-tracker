@@ -84,6 +84,8 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 
 st.divider()
 
+
+
 # Sidebar navigation menu
 with st.sidebar:
     st.header("Navigation")
