@@ -208,7 +208,7 @@ elif page == "Transactions":
     
     st.subheader("Sample Transactions Data")
     
-    
+    edited_df = st.data
     st.dataframe(filtered_df)
 
 
