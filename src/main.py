@@ -29,7 +29,7 @@ def load_transactions(file_source) -> pd.DataFrame:
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
     
-    df["description"] = df
+    df["description"] = df["description"].astype
     df = df.dropna(subset=["date", "amount"])
     
     return df
