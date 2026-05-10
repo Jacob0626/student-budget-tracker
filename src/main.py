@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as import pd
+
 
 st.set_page_config(
     page_title = "Student Budget Tracker",
