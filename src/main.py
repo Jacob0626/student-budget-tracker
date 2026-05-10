@@ -57,6 +57,10 @@ def get_spending_by_category(df: pd.DataFrame) -> pd.DataFrame:
     
     return category_summary
 
+def get_income_expense_summary(df: pd.DataFrame) -> pd.DataFrame:
+    """"""
+
+
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
