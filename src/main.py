@@ -17,6 +17,9 @@ def get_data_path(filename: str) -> str:
     """Return the full path for a file inside the data folder."""
     return os.path.join(APP_PATH, "data", filename)
 
+def load_transactions(filename: str) -> pd.DataFrame:
+    """"""
+
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
