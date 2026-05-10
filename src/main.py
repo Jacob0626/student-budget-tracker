@@ -106,7 +106,7 @@ if page == "Dashboard":
             category_summary,
             x="category",
             y="amount",
-            title=
+            title="Total"
         )
 
 
