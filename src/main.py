@@ -71,7 +71,7 @@ def filter_transactions(df: pd.DataFrame, selected_type: str, selected_category:
         filtered_df = filtered_df[filtered_df["type"] == selected_type]
     
     if selected_category != "All":
-        fi
+        filtered_df = 
 
 
 st.title("Student Budget & Spending Habit Tracker")
