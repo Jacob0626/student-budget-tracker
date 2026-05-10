@@ -24,7 +24,7 @@ def load_transactions(file_source) -> pd.DataFrame:
     if isinstance(file_source, str):
         df = pd.read_csv(get_data_path(file_source))
     else:
-        df= pd.read_csv
+        df= pd.read_csv(file_source)
     
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
