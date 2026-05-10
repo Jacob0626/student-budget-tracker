@@ -100,7 +100,9 @@ if page == "Dashboard":
     category_summary = get_spending_by_category(df)
     
     if category_summary.empty:
-        st.warning("No expense data ")
+        st.warning("No expense data avaliable to show")
+    else:
+        
 
 
 
