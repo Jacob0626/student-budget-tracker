@@ -31,7 +31,7 @@ def load_transactions(filename: str) -> pd.DataFrame:
 def calculate_summary(df: pd.DataFrame) -> dict:
     """Calculate basic income and expense summary values."""
     income = df[df["type"] == "Income"]["amount"].sum()
-    expenses= df[df["type"] == "Expenses"]["amount"].sum()
+    expenses= df[df["type"] == "Expense"]["amount"].sum()
     money_left = income - expenses 
     
     if income > 0:
