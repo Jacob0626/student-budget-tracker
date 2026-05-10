@@ -13,6 +13,9 @@ st.set_page_config(
 
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
+def get_data_path(filname: str) -> str:
+    """"""
+
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
