@@ -25,6 +25,8 @@ def load_transactions(filename: str) -> pd.DataFrame:
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
     
     df = df.dropna(subset=["date", "amount"])
+    
+    return df
 
 st.title("Student Budget & Spending Habit Tracker")
 
