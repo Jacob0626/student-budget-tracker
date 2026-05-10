@@ -16,4 +16,4 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 
 st.divider()
 
-# 
+# Side
