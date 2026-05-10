@@ -109,6 +109,8 @@ if page == "Dashboard":
             title="Total Expenses by Category",
             text_auto=".2f"
         )
+        
+        st.plotly_chart()
 
 
 
