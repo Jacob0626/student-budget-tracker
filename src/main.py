@@ -127,7 +127,7 @@ if page == "Dashboard":
         type_summary,
         x="type",
         y="amount",
-        title=""
+        title="Income Compared to Expenses"
     )
 
 
