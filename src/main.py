@@ -210,7 +210,8 @@ elif page == "Transactions":
     
     edited_df = st.data_editor(
         filtered_df,
-        num_rows=""
+        num_rows="dynamic",
+        use_container_width=True
     )
     st.dataframe(filtered_df)
 
