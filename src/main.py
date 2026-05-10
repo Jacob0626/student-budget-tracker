@@ -82,7 +82,7 @@ if page == "Dashboard":
     with col3:
         st.metric("Money Left", f"${summary['money_left']:.2f}")
     with col4:
-        st.metric("Savings Rate", f"${summary['savings_rate']:.2f}")
+        st.metric("Savings Rate", f"${summary['savings_rate']:.1f}%")
         
 
 elif page == "Transactions":
