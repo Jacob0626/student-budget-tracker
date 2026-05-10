@@ -32,7 +32,10 @@ def calculate_summary(df: pd.DataFrame) -> dict:
     """Calculate basic income and expense summary values."""
     income = df[df["type"] == "Income"]["amount"].sum()
     expenses= df[df["type"] == "Expenses"]["amount"].sum()
-    money_left
+    money_left = income - expenses 
+    
+    if income > 0:
+        savi
 
 st.title("Student Budget & Spending Habit Tracker")
 
