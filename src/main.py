@@ -84,7 +84,8 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 
 st.divider()
 
-df = load_transactions("sample_transactions.")
+df = load_transactions("sample_transactions.csv")
+category
 
 # Sidebar navigation menu
 with st.sidebar:
