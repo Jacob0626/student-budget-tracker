@@ -103,7 +103,9 @@ if page == "Dashboard":
         st.warning("No expense data avaliable to show")
     else:
         fig = px.bar(
-            category_summary
+            category_summary,
+            x="category",
+            
         )
 
 
