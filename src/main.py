@@ -18,6 +18,7 @@ def get_data_path(filename: str) -> str:
     """Return the full path for a file inside the data folder."""
     return os.path.join(APP_PATH, "data", filename)
 
+
 def load_transactions(filename: str) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
     df = pd.read_csv(get_data_path(filename))
@@ -28,6 +29,7 @@ def load_transactions(filename: str) -> pd.DataFrame:
     df = df.dropna(subset=["date", "amount"])
     
     return df
+
 
 def calculate_summary(df: pd.DataFrame) -> dict:
     """Calculate basic income and expense summary values."""
