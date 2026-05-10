@@ -20,7 +20,11 @@ def get_data_path(filename: str) -> str:
 
 def validate_columns(df: pd.DataFrame) -> bool:
     """Check if the transaction data has the required columns."""
-    required_columns = ["date", "description", "category", "type", ]
+    required_columns = ["date", "description", "category", "type", "amount"]
+    
+    for column in required_columns:
+        if column not in df.columns:
+            return False
 
 def load_transactions(file_source) -> pd.DataFrame:
     """Load transaction data from a CSV file and prepare it for analysis."""
