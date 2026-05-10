@@ -167,7 +167,7 @@ elif page == "Transactions":
     filtered_df = filtered_transactions(df, transaction_type, category_filter)
     
     st.subheader("Sample Transactions Data")
-    st.dataframe()
+    st.dataframe(filtered_df)
 
 
 elif page == "Budget Goals":
