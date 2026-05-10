@@ -100,7 +100,7 @@ with st.sidebar:
     st.header("Filters")
     
     transaction_type = st.selectbox(
-        "transaction Type",
+        "Transaction Type",
         ["All", "Income", "Expense"]
     )
     
