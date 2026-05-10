@@ -46,7 +46,7 @@ elif page == "Transactions":
     
     df = pd.read_csv(get_data_path("sample_transactions.csv"))
     
-    st.subheader("sample_transactions")
+    st.subheader("Sample Transactions Data")
 
 
 elif page == "Budget Goals":
