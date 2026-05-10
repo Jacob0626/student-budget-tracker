@@ -105,6 +105,8 @@ else:
     df = load_transactions("sample_transactions.csv")
     st.sidebar.info("Using sample transaction data.")
 
+
+
 # Sidebar navigation menu
 with st.sidebar:
     st.header("Navigation")
