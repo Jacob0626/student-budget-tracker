@@ -114,7 +114,6 @@ if page == "Dashboard":
     st.header("Dashboard")
     st.info("This section will show income, expenses, money left, and spending charts.")
     
-    df = load_transactions("sample_transactions.csv")
     filtered_df = filter_transactions(df, transaction_type, category_filter)
     summary = calculate_summary(filtered_df)
     
