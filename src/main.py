@@ -102,7 +102,8 @@ if uploaded_file is not None:
     df = load_transactions(uploaded_file)
     st.sidebar.success("Uploaded CSV loaded successfully.")
 else:
-    df = load_transactions("")
+    df = load_transactions("sample_transactions.csv")
+    
 
 # Sidebar navigation menu
 with st.sidebar:
