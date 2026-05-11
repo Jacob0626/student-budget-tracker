@@ -175,7 +175,7 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
             "Savings Rate",
             "Monthly Savings Goal",
         ],
-        "value": [
+        "Value": [
             round(summary["income"], 2),
             round(summary["expenses"], 2),
             round(summary["money_left"], 2),
