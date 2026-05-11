@@ -134,7 +134,7 @@ def save_budget_settings(settings: dict) -> None:
         json.dump(settings, file, indent=4)
 
 def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.DataFrame:
-    """Com"""
+    """Compare category budgets to actual spending"""
 
 st.title("Student Budget & Spending Habit Tracker")
 
