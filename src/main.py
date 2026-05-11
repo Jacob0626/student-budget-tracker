@@ -321,7 +321,9 @@ elif page == "Budget Goals":
                 "category_budgets": {
                     "Food": food_budget,
                     "Gas": gas_budget,
-                    "Groceries":
+                    "Groceries": groceries_budget,
+                    "Entertainment": entertainment_budget,
+                    "Subscriptions": subscriptions_budget
                 }
             }
 
