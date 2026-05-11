@@ -278,7 +278,7 @@ elif page == "Budget Goals":
         )
         st.subheader("Category Budgets")
         
-        food_budget
+        food_budget = st.number_input
 
 
 elif page == "About":
