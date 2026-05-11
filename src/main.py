@@ -303,7 +303,7 @@ if page == "Dashboard":
 
 elif page == "Transactions":
     st.header("Transactions")
-    st.info("This section will let the user upload, view, and edit transaction data.")
+    st.info("Upload, view, edit, and save transaction data. The table updates based on the selected filters.")
     
     filtered_df = filter_transactions(df, transaction_type, category_filter)
     
