@@ -228,7 +228,7 @@ elif page == "Transactions":
         use_container_width=True
     )
     
-    filters
+    filters_are_clear = transa
     
     if st.button("Save Edited Transactions"):
         save_transactions(edited_df, "saved_transactions.csv")
