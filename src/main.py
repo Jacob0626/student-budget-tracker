@@ -370,7 +370,7 @@ elif page == "Budget Goals":
             
             save_budget_settings(new_settings)
             st.success("Budget settings saved successfully")
-            st.rerun
+            st.rerun() 
 
 
 elif page == "About":
