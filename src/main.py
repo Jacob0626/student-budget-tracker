@@ -163,6 +163,7 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
             "Remaining": remaining,
             "Status": status
         })
+    return pd.DataFrame
 
 st.title("Student Budget & Spending Habit Tracker")
 
