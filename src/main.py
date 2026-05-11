@@ -170,7 +170,8 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
     report_data = {
         "Metric": [
             "Total Income",
-            
+            "Total Expenses",
+            "Money "
         ]
     }
 
