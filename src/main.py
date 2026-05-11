@@ -128,6 +128,9 @@ def load_budget_settings() -> dict:
             return json.load(file)
     return default_settings
 
+def save_budget_settings(settings: dict) -> None:
+    """"""
+
 
 st.title("Student Budget & Spending Habit Tracker")
 
