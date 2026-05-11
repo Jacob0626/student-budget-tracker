@@ -279,7 +279,8 @@ elif page == "Budget Goals":
         st.subheader("Category Budgets")
         
         food_budget = st.number_input(
-            "Food Budget"
+            "Food Budget",
+            min_value=0.0
         )
 
 
