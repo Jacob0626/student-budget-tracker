@@ -239,7 +239,7 @@ with st.sidebar:
 # Main page content
 if page == "Dashboard":
     st.header("Dashboard")
-    st.info("This section will show income, expenses, money left, and spending charts.")
+    st.info("This dashboard shows a financial summary based on the current transaction data and selected filters.")
     
     filtered_df = filter_transactions(df, transaction_type, category_filter)
     summary = calculate_summary(filtered_df)
