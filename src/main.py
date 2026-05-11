@@ -281,7 +281,7 @@ elif page == "Budget Goals":
         food_budget = st.number_input(
             "Food Budget",
             min_value=0.0,
-            value=float(budget_settings[])
+            value=float(budget_settings["category_budgets"].get)
         )
 
 
