@@ -137,7 +137,7 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
     """Compare category budgets to actual spending."""
     expenses_df = df[df["type"] == "Expenses"]
     
-    spending
+    spending_by_category = 
 
 st.title("Student Budget & Spending Habit Tracker")
 
