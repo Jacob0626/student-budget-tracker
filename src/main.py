@@ -412,7 +412,7 @@ elif page == "Budget Goals":
         use_container_width=True
     )
 
-
+# About page: brief project information
 elif page == "About":
     st.header("About")
     st.info("This project was built with Python, Streamlit, Pandas, Plotly, JSON, CSV files, and GitHub version control.")
