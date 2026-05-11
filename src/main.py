@@ -308,7 +308,7 @@ elif page == "Transactions":
     filtered_df = filter_transactions(df, transaction_type, category_filter)
     
     st.subheader("Transaction Data")
-    st.warning("Edit the full table and save your changes. Clear filters before saving.")
+    st.info("Edit the full table and save your changes. Clear filters before saving.")
     
     edited_df = st.data_editor(
         filtered_df,
