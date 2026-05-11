@@ -97,7 +97,7 @@ def filter_transactions(df: pd.DataFrame, selected_type: str, selected_category:
     return filtered_df
 
 def save_transactions(df: pd.DataFrame, filename: str) -> None:
-    """"Save transaction data to a CSV file inside the data folder."""
+    """Save transaction data to a CSV file inside the data folder."""
     df.to_csv(get_data_path(filename), index=False)
 
 def get_default_transaction_file() -> str:
