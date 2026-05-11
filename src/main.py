@@ -165,6 +165,9 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
         })
     return pd.DataFrame(budget_rows)
 
+def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
+    """"""
+
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
