@@ -318,7 +318,9 @@ elif page == "Budget Goals":
         if submitted:
             new_setting = {
                 "savings_goal": savings_goal,
-                
+                "category_budgets": {
+                    
+                }
             }
 
 
