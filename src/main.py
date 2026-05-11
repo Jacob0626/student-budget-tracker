@@ -167,7 +167,9 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
 
 def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
     """Create a simple financial summary report as a DataFrame."""
-    report_data = {}
+    report_data = {
+        "Metric"
+    }
 
 st.title("Student Budget & Spending Habit Tracker")
 
