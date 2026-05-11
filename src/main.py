@@ -157,7 +157,11 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
             status = "Over budget"
         
         budget_rows.append({
-            
+            "Category": category,
+            "Budget": budget_amount,
+            "Spent": spent,
+            "Remaining": remaining,
+            "Status": status
         })
 
 st.title("Student Budget & Spending Habit Tracker")
