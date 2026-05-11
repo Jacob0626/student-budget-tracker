@@ -122,6 +122,9 @@ def load_budget_settings() -> dict:
             "Subscriptions": 50.0
         }
     }
+    
+    if os.path.exists(settings_path):
+        with open(settings_path, "r", 
 
 
 st.title("Student Budget & Spending Habit Tracker")
