@@ -109,7 +109,8 @@ def get_default_transaction_file() -> str:
     return "sample_transactions.csv"
 
 def load_budget_settings() -> dict:
-    """"""
+    """Load budget settings from a JSON file, or return default settings."""
+    settin
 
 
 st.title("Student Budget & Spending Habit Tracker")
