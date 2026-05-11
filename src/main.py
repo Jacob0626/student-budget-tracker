@@ -269,6 +269,8 @@ elif page == "Budget Goals":
     st.header("Budget Goals")
     st.info("This section will let the user set budgets and savings goals.")
     
+    with st.form("budget_settings_form"):
+        
 
 
 elif page == "About":
