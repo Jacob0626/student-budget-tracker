@@ -115,6 +115,8 @@ def load_budget_settings() -> dict:
     default_settings = {
         "savings_goal": 100.0,
         "category_budgets": {
+            "Food": 200.0,
+            "Gas": 120.0,
             
         }
     }
