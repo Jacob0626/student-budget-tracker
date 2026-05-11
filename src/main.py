@@ -110,7 +110,7 @@ def get_default_transaction_file() -> str:
 
 def load_budget_settings() -> dict:
     """Load budget settings from a JSON file, or return default settings."""
-    settings_path = get_data_path()
+    settings_path = get_data_path("budget_settings_job")
 
 
 st.title("Student Budget & Spending Habit Tracker")
