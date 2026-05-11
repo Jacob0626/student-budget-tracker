@@ -175,7 +175,13 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
             "Savings Rate",
             "Monthly Savings Goal",
         ],
-        "value": []
+        "value": [
+            round(summary["income"], 2),
+            round(summary["expenses"], 2),
+            round(summary["money_left"], 2),
+            round(summary["savings_rate"], 1),
+            round(budget_settings["savings_goal"], 2)
+        ]
     }
 
 st.title("Student Budget & Spending Habit Tracker")
