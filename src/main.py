@@ -19,6 +19,7 @@ def get_data_path(filename: str) -> str:
     """Return the full path for a file inside the data folder."""
     return os.path.join(APP_PATH, "data", filename)
 
+# Data validation helpers
 def validate_columns(df: pd.DataFrame) -> bool:
     """Check if the transaction data has the required columns."""
     required_columns = ["date", "description", "category", "type", "amount"]
