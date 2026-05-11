@@ -183,7 +183,7 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
             round(budget_settings["savings_goal"], 2)
         ]
     }
-    return pd
+    return pd.DataFrame(report_data)
 
 st.title("Student Budget & Spending Habit Tracker")
 
