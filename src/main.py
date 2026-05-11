@@ -137,7 +137,11 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
     """Compare category budgets to actual spending."""
     expenses_df = df[df["type"] == "Expenses"]
     
-    spending_by_category = expenses_df.groupby("category", as_index=False)["amount"]
+    spending_by_category = expenses_df.groupby("category", as_index=False)["amount"].sum()
+    
+    budget_rows = []
+    
+    for category, budget_amount
 
 st.title("Student Budget & Spending Habit Tracker")
 
