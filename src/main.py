@@ -108,6 +108,9 @@ def get_default_transaction_file() -> str:
         return "saved_transactions.csv"
     return "sample_transactions.csv"
 
+def load_budget_settings() -> dict:
+    """"""
+
 
 st.title("Student Budget & Spending Habit Tracker")
 
