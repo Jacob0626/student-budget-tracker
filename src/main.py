@@ -228,7 +228,7 @@ elif page == "Transactions":
         use_container_width=True
     )
     
-    filters_are_clear = transaction_type == "All" and category_filter
+    filters_are_clear = transaction_type == "All" and category_filter ==
     
     if st.button("Save Edited Transactions"):
         save_transactions(edited_df, "saved_transactions.csv")
