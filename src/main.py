@@ -257,7 +257,7 @@ if page == "Dashboard":
     
     report_df = create_summary_report(summary, budget_settings)
     
-    csv_report
+    csv_report = report_df.to_csv(index=)
     
     st.divider()
     
