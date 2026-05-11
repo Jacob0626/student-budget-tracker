@@ -330,18 +330,8 @@ elif page == "Transactions":
 
 elif page == "Budget Goals":
     st.header("Budget Goals")
-    st.info("This section will let the user set budgets and savings goals.")
-    
-    st.divider()
-    st.subheader("Budget Progress")
-    
-    budget_comparison = compare_budget_to_spending(df, budget_settings)
-    
-    st.dataframe(
-        budget_comparison,
-        use_container_width=True
-    )
-    
+    st.info("Set your savings goal and monthly category budgets, then compare your budget to actual spending.")
+
     with st.form("budget_settings_form"):
         savings_goal = st.number_input(
             "Monthly Savings Goal",
@@ -349,6 +339,7 @@ elif page == "Budget Goals":
             value=float(budget_settings["savings_goal"]),
             step=10.0
         )
+
         st.subheader("Category Budgets")
         
         food_budget = st.number_input(
@@ -388,21 +379,31 @@ elif page == "Budget Goals":
         
         submitted = st.form_submit_button("Save Budget Settings")
         
-        if submitted:
-            new_settings = {
-                "savings_goal": savings_goal,
-                "category_budgets": {
-                    "Food": food_budget,
-                    "Gas": gas_budget,
-                    "Groceries": groceries_budget,
-                    "Entertainment": entertainment_budget,
-                    "Subscriptions": subscriptions_budget
-                }
+    if submitted:
+        new_settings = {
+            "savings_goal": savings_goal,
+            "category_budgets": {
+                "Food": food_budget,
+                "Gas": gas_budget,
+                "Groceries": groceries_budget,
+                "Entertainment": entertainment_budget,
+                "Subscriptions": subscriptions_budget
             }
-            
-            save_budget_settings(new_settings)
-            st.success("Budget settings saved successfully")
-            st.rerun() 
+        }
+        
+        save_budget_settings(new_settings)
+        st.success("Budget settings saved successfully.")
+        st.rerun()
+
+    st.divider()
+    st.subheader("Budget Progress")
+    
+    budget_comparison = compare_budget_to_spending(df, budget_settings)
+    
+    st.dataframe(
+        budget_comparison,
+        use_container_width=True
+    )
 
 
 elif page == "About":
