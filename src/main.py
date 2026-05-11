@@ -270,7 +270,7 @@ elif page == "Budget Goals":
     st.info("This section will let the user set budgets and savings goals.")
     
     with st.form("budget_settings_form"):
-        savings_goal = st.
+        savings_goal = st.number_input
 
 
 elif page == "About":
