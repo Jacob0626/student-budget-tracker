@@ -319,7 +319,8 @@ elif page == "Budget Goals":
             new_setting = {
                 "savings_goal": savings_goal,
                 "category_budgets": {
-                    "Food": food
+                    "Food": food_budget,
+                    "Gas"
                 }
             }
 
