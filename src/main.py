@@ -113,7 +113,10 @@ def load_budget_settings() -> dict:
     settings_path = get_data_path("budget_settings_json")
     
     default_settings = {
-        "savings_goal": 100
+        "savings_goal": 100.0,
+        "category_budgets": {
+            
+        }
     }
 
 
