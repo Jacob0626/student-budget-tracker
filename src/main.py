@@ -141,7 +141,8 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
     
     budget_rows = []
     
-    for category, budget_amount
+    for category, budget_amount in budget_settings["category_budgets"].items():
+        spent_
 
 st.title("Student Budget & Spending Habit Tracker")
 
