@@ -334,7 +334,7 @@ elif page == "Transactions":
     else:
         st.warning("Clear all filters before saving edited transactions.")
 
-
+# Budget Goals page: save budget settings and compare budgets to actual spending
 elif page == "Budget Goals":
     st.header("Budget Goals")
     st.info("Set your savings goal and monthly category budgets, then compare your budget to actual spending.")
