@@ -161,7 +161,7 @@ else:
         st.sidebar.info("Using sample transaction data.")
 
 category_options = ["All"] + sorted(df["category"].unique())
-budget_settings
+budget_settings = load_budget_settings()
 # Sidebar navigation menu
 with st.sidebar:
     st.header("Navigation")
