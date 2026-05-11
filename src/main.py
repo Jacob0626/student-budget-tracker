@@ -236,7 +236,7 @@ elif page == "Transactions":
             st.success("Edited transactions saved successfully")
     
     else:
-        st.warning("Clear all fil")
+        st.warning("Clear all filters before saving edited transactions.")
 
 
 elif page == "Budget Goals":
