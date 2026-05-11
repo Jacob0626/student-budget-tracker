@@ -255,7 +255,7 @@ if page == "Dashboard":
     with col4:
         st.metric("Savings Rate", f"{summary['savings_rate']:.1f}%")
     
-    
+    report_df = create_summary_report(summary)
     
     st.divider()
     
