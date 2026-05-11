@@ -316,6 +316,7 @@ elif page == "Transactions":
         use_container_width=True
     )
     
+    # Prevent
     filters_are_clear = transaction_type == "All" and category_filter == "All"
     
     if filters_are_clear:
