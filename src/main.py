@@ -149,7 +149,10 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
         else:
             spent = float(spent_series.iloc[0])
         
-        remaining = budget_
+        remaining = budget_amount - spent
+        
+        if remaining >= 0:
+            status
 
 st.title("Student Budget & Spending Habit Tracker")
 
