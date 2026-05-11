@@ -322,7 +322,7 @@ elif page == "Transactions":
     if filters_are_clear:
         if st.button("Save Edited Transactions"):
             save_transactions(edited_df, "saved_transactions.csv")
-            st.success("Edited transactions saved successfully")
+            st.success("Edited transactions saved successfully.")
     
     else:
         st.warning("Clear all filters before saving edited transactions.")
