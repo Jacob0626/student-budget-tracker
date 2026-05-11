@@ -162,6 +162,7 @@ else:
 
 category_options = ["All"] + sorted(df["category"].unique())
 budget_settings = load_budget_settings()
+
 # Sidebar navigation menu
 with st.sidebar:
     st.header("Navigation")
