@@ -134,9 +134,7 @@ streamlit run dist/main.py
 
 ## AI Use Statement
 
-AI assistance was used as a support tool during development. It helped with explaining Streamlit concepts, debugging errors, organizing code, writing comments/docstrings, and improving documentation.
-
-The app was developed step by step, and the code was tested and reviewed throughout the process so I could understand and explain how each part works.
+AI assistance was used during this project for debugging errors, improving documentation, explaining some Streamlit/Pandas concepts, and helping write part of the README. 
 
 ---
 
