@@ -52,7 +52,7 @@ def load_transactions(file_source) -> pd.DataFrame:
     
     return df
 
-
+# Financial analysis helper functions
 def calculate_summary(df: pd.DataFrame) -> dict:
     """Calculate basic income and expense summary values."""
     income = df[df["type"] == "Income"]["amount"].sum()
