@@ -277,6 +277,8 @@ elif page == "Budget Goals":
             step=10.0
         )
         st.subheader("Category Budgets")
+        
+        food_budget
 
 
 elif page == "About":
