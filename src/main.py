@@ -236,7 +236,7 @@ elif page == "Transactions":
             st.success("Edited transactions saved successfully")
     
     else:
-        
+        st.warning("Clear")
 
 
 elif page == "Budget Goals":
