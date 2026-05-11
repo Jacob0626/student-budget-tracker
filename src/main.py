@@ -243,7 +243,7 @@ with st.sidebar:
         category_options
     )
 
-# Main page content
+# Dashboard page: summary metrics, charts, and report download
 if page == "Dashboard":
     st.header("Dashboard")
     st.info("This dashboard shows a financial summary based on the current transaction data and selected filters.")
