@@ -126,7 +126,7 @@ def load_budget_settings() -> dict:
     if os.path.exists(settings_path):
         with open(settings_path, "r", encoding="utf-8") as file:
             return json.load(file)
-    
+    return default_settings
 
 
 st.title("Student Budget & Spending Habit Tracker")
