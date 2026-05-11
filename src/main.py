@@ -313,7 +313,7 @@ elif page == "Budget Goals":
             step=10.0
         )
         
-        
+        submitted = st.form_submit_button("")
 
 
 elif page == "About":
