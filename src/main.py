@@ -291,6 +291,8 @@ elif page == "Budget Goals":
             value=float(budget_settings["category_budgets"].get("Gas", 0.0)),
             step=10.0
         )
+        
+        
 
 
 elif page == "About":
