@@ -1,0 +1,10 @@
+{
+    "savings_goal": 100.0,
+    "category_budgets": {
+        "Food": 200.0,
+        "Gas": 120.0,
+        "Groceries": 150.0,
+        "Entertainment": 100.0,
+        "Subscriptions": 20.0
+    }
+}
