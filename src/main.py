@@ -154,7 +154,9 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
         if remaining >= 0:
             status = "Under Budget"
         else:
-            status
+            status = "Over budget"
+        
+        
 
 st.title("Student Budget & Spending Habit Tracker")
 
