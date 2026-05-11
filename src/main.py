@@ -194,7 +194,7 @@ Users will be able to upload transaction data, view summaries, analyze spending 
 
 st.divider()
 
-# Load transaction data from an uploaded CSV
+# Load transaction data from an uploaded CSV, saved CSV, or sample CSV
 uploaded_file = st.sidebar.file_uploader(
     "Upload transaction CSV",
     type=["csv"]
