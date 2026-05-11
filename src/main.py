@@ -303,7 +303,7 @@ elif page == "Budget Goals":
     st.divider()
     st.subheader("Budget Progress")
     
-    budget_comparison = compare_budget_to_spending
+    budget_comparison = compare_budget_to_spending(df, budget_settings)
     with st.form("budget_settings_form"):
         savings_goal = st.number_input(
             "Monthly Savings Goal",
