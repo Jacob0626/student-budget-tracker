@@ -301,7 +301,9 @@ elif page == "Budget Goals":
     st.info("This section will let the user set budgets and savings goals.")
     
     st.divider()
-    st.subheader()
+    st.subheader("Budget Progress")
+    
+    budget
     with st.form("budget_settings_form"):
         savings_goal = st.number_input(
             "Monthly Savings Goal",
