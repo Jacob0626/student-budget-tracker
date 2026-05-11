@@ -133,6 +133,8 @@ def save_budget_settings(settings: dict) -> None:
     with open(get_data_path("budget_settings.json"), "w", encoding="utf-8") as file:
         json.dump(settings, file, indent=4)
 
+def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.DataFrame:
+    """"""
 
 st.title("Student Budget & Spending Habit Tracker")
 
