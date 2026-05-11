@@ -316,7 +316,9 @@ elif page == "Budget Goals":
         submitted = st.form_submit_button("Save Budget Settings")
         
         if submitted:
-            new_setting = {}
+            new_setting = {
+                
+            }
 
 
 elif page == "About":
