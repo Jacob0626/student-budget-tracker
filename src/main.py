@@ -106,7 +106,7 @@ def get_default_transaction_file() -> str:
     
     if os.path.exists(saved_file_path):
         return "saved_transactions.csv"
-    return "sample_tra"
+    return "sample_transactions.csv"
 
 
 st.title("Student Budget & Spending Habit Tracker")
