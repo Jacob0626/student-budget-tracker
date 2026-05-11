@@ -257,6 +257,8 @@ if page == "Dashboard":
     
     report_df = create_summary_report(summary, budget_settings)
     
+    csv_report
+    
     st.divider()
     
     if transaction_type != "Income":
