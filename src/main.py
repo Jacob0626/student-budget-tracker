@@ -276,6 +276,7 @@ elif page == "Budget Goals":
             value=float(budget_settings["savings_goal"]),
             step=10.0
         )
+    
 
 
 elif page == "About":
