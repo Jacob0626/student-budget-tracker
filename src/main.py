@@ -272,7 +272,8 @@ elif page == "Budget Goals":
     with st.form("budget_settings_form"):
         savings_goal = st.number_input(
             "Monthly Savings Goal",
-            m
+            min_value=0.0,
+            
         )
 
 
