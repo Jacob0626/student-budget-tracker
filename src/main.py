@@ -228,6 +228,8 @@ elif page == "Transactions":
         use_container_width=True
     )
     
+    filters
+    
     if st.button("Save Edited Transactions"):
         save_transactions(edited_df, "saved_transactions.csv")
         st.success("Edited transactions saved successfully")
