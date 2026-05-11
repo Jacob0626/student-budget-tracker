@@ -326,6 +326,7 @@ elif page == "Budget Goals":
                     "Subscriptions": subscriptions_budget
                 }
             }
+            
 
 
 elif page == "About":
