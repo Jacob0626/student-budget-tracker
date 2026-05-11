@@ -305,7 +305,10 @@ elif page == "Budget Goals":
     
     budget_comparison = compare_budget_to_spending(df, budget_settings)
     
-    st.
+    st.dataframe(
+        budget_comparison,
+        use_container_width=True
+    )
     with st.form("budget_settings_form"):
         savings_goal = st.number_input(
             "Monthly Savings Goal",
