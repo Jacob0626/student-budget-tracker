@@ -268,6 +268,8 @@ elif page == "Transactions":
 elif page == "Budget Goals":
     st.header("Budget Goals")
     st.info("This section will let the user set budgets and savings goals.")
+    
+
 
 elif page == "About":
     st.header("About")
