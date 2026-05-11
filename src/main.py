@@ -262,7 +262,8 @@ if page == "Dashboard":
     st.download_button(
         label="Download Financial Summary",
         data=csv_report,
-        file_name="financial_summary"
+        file_name="financial_summary.csv",
+        mime="text/"
     )
     
     st.divider()
