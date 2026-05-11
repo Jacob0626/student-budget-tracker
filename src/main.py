@@ -234,6 +234,9 @@ elif page == "Transactions":
         if st.button("Save Edited Transactions"):
             save_transactions(edited_df, "saved_transactions.csv")
             st.success("Edited transactions saved successfully")
+    
+    else:
+        
 
 
 elif page == "Budget Goals":
