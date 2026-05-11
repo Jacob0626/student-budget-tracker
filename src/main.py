@@ -135,14 +135,14 @@ def save_budget_settings(settings: dict) -> None:
 
 def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.DataFrame:
     """Compare category budgets to actual spending."""
-    expenses_df = df[df["type"] == "Expenses"]
+    expenses_df = df[df["type"] == "Expense"]
     
     spending_by_category = expenses_df.groupby("category", as_index=False)["amount"].sum()
     
     budget_rows = []
     
     for category, budget_amount in budget_settings["category_budgets"].items():
-        spent_series = spending_by_category[spending_by_category["category"] == category]["amount"]\
+        spent_series = spending_by_category[spending_by_category["category"] == category]["amount"]
         
         if spent_series.empty:
             spent = 0.0
