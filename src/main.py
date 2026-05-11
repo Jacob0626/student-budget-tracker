@@ -12,6 +12,7 @@ st.set_page_config(
     initial_sidebar_state = "expanded"
 )
 
+# Base path used to safely load and save files from the data folder
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def get_data_path(filename: str) -> str:
