@@ -173,7 +173,7 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
             "Total Expenses",
             "Money Left",
             "Savings Rate",
-            "Mon"
+            "Monthly Savings Goal"
         ]
     }
 
