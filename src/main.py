@@ -100,6 +100,14 @@ def save_transactions(df: pd.DataFrame, filename: str) -> None:
     """"Save transaction data to a CSV file inside the data folder."""
     df.to_csv(get_data_path(filename), index=False)
 
+def get_default_transaction_file() -> str:
+    """Choose saved transactions if they exist, otherwise use sample data."""
+    saved_file_path = get_data_path("saved_transactions.csv")
+    
+    if os.path.exists(saved_file_path):
+        return "saved_transactions.csv"
+    return "saved_transactions.csv"
+
 
 st.title("Student Budget & Spending Habit Tracker")
 
@@ -119,8 +127,13 @@ if uploaded_file is not None:
     df = load_transactions(uploaded_file)
     st.sidebar.success("Uploaded CSV loaded successfully.")
 else:
-    df = load_transactions("sample_transactions.csv")
-    st.sidebar.info("Using sample transaction data.")
+    default_file = get_default_transaction_file()
+    df = load_transactions(default_file)
+    
+    if default_file == "saved_transactions.csv":
+        st.sidebar.success("Using saved transaction data.")
+    else:
+        st.sidebar.info("Using sample transaction data.")
 
 category_options = ["All"] + sorted(df["category"].unique())
 
