@@ -327,7 +327,7 @@ elif page == "Budget Goals":
                 }
             }
             
-            save_budget_settings
+            save_budget_settings(new_settings)
 
 
 elif page == "About":
