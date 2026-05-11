@@ -328,7 +328,7 @@ elif page == "Budget Goals":
             }
             
             save_budget_settings(new_settings)
-            st.success
+            st.success("")
 
 
 elif page == "About":
