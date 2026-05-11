@@ -230,9 +230,10 @@ elif page == "Transactions":
     
     filters_are_clear = transaction_type == "All" and category_filter == "All"
     
-    if st.button("Save Edited Transactions"):
-        save_transactions(edited_df, "saved_transactions.csv")
-        st.success("Edited transactions saved successfully")
+    if filters_are_clear:
+        if st.button("Save Edited Transactions"):
+            save_transactions(edited_df, "saved_transactions.csv")
+            st.success("Edited transactions saved successfully")
 
 
 elif page == "Budget Goals":
