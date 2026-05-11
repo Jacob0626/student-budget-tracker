@@ -260,7 +260,7 @@ if page == "Dashboard":
     csv_report = report_df.to_csv(index=False)
     
     st.download_button(
-        label="Download Fin"
+        label="Download Financial Summary"
     )
     
     st.divider()
