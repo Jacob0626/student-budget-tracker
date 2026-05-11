@@ -118,7 +118,8 @@ def load_budget_settings() -> dict:
             "Food": 200.0,
             "Gas": 120.0,
             "Groceries": 250.0,
-            "Entertainment":
+            "Entertainment": 100.0,
+            "Subscriptions": 50.0
         }
     }
 
