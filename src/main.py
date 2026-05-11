@@ -146,6 +146,8 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
         
         if spent_series.empty:
             spent = 0.0
+        else:
+            spent = float
 
 st.title("Student Budget & Spending Habit Tracker")
 
