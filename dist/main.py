@@ -12,12 +12,14 @@ st.set_page_config(
     initial_sidebar_state = "expanded"
 )
 
+# Base path used to safely load and save files from the data folder
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def get_data_path(filename: str) -> str:
     """Return the full path for a file inside the data folder."""
     return os.path.join(APP_PATH, "data", filename)
 
+# Data validation helpers
 def validate_columns(df: pd.DataFrame) -> bool:
     """Check if the transaction data has the required columns."""
     required_columns = ["date", "description", "category", "type", "amount"]
@@ -50,7 +52,7 @@ def load_transactions(file_source) -> pd.DataFrame:
     
     return df
 
-
+# Financial analysis helper functions
 def calculate_summary(df: pd.DataFrame) -> dict:
     """Calculate basic income and expense summary values."""
     income = df[df["type"] == "Income"]["amount"].sum()
@@ -96,6 +98,7 @@ def filter_transactions(df: pd.DataFrame, selected_type: str, selected_category:
     
     return filtered_df
 
+# Save and load helper functions for transactions and budget settings
 def save_transactions(df: pd.DataFrame, filename: str) -> None:
     """Save transaction data to a CSV file inside the data folder."""
     df.to_csv(get_data_path(filename), index=False)
@@ -165,6 +168,7 @@ def compare_budget_to_spending(df: pd.DataFrame, budget_settings: dict) -> pd.Da
         })
     return pd.DataFrame(budget_rows)
 
+# Report export helper
 def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
     """Create a simple financial summary report as a DataFrame."""
     report_data = {
@@ -185,6 +189,7 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
     }
     return pd.DataFrame(report_data)
 
+# Main app title and description
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
@@ -238,7 +243,7 @@ with st.sidebar:
         category_options
     )
 
-# Main page content
+# Dashboard page: summary metrics, charts, and report download
 if page == "Dashboard":
     st.header("Dashboard")
     st.info("This dashboard shows a financial summary based on the current transaction data and selected filters.")
@@ -302,7 +307,7 @@ if page == "Dashboard":
     
     st.plotly_chart(fig, use_container_width=True)
 
-
+# Transactions page: view, edit, and save transaction data
 elif page == "Transactions":
     st.header("Transactions")
     st.info("Upload, view, edit, and save transaction data. The table updates based on the selected filters.")
@@ -329,7 +334,7 @@ elif page == "Transactions":
     else:
         st.warning("Clear all filters before saving edited transactions.")
 
-
+# Budget Goals page: save budget settings and compare budgets to actual spending
 elif page == "Budget Goals":
     st.header("Budget Goals")
     st.info("Set your savings goal and monthly category budgets, then compare your budget to actual spending.")
@@ -407,7 +412,7 @@ elif page == "Budget Goals":
         use_container_width=True
     )
 
-
+# About page: brief project information
 elif page == "About":
     st.header("About")
     st.info("This project was built with Python, Streamlit, Pandas, Plotly, JSON, CSV files, and GitHub version control.")
