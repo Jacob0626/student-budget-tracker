@@ -131,7 +131,7 @@ def load_budget_settings() -> dict:
 def save_budget_settings(settings: dict) -> None:
     """Save budget settings to a JSON file inside the data folder."""
     with open(get_data_path("budget_settings.json"), "w", encoding="utf-8") as file:
-        json.dump
+        json.dump(settings, file, indent)
 
 
 st.title("Student Budget & Spending Habit Tracker")
