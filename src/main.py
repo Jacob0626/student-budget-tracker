@@ -189,6 +189,7 @@ def create_summary_report(summary: dict, budget_settings: dict) -> pd.DataFrame:
     }
     return pd.DataFrame(report_data)
 
+# Main app title and description
 st.title("Student Budget & Spending Habit Tracker")
 
 st.write('''
