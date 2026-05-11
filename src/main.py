@@ -307,7 +307,7 @@ if page == "Dashboard":
     
     st.plotly_chart(fig, use_container_width=True)
 
-
+# Transactions page: view, edit, and save transaction data
 elif page == "Transactions":
     st.header("Transactions")
     st.info("Upload, view, edit, and save transaction data. The table updates based on the selected filters.")
