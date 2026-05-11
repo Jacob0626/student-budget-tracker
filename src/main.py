@@ -273,7 +273,8 @@ elif page == "Budget Goals":
         savings_goal = st.number_input(
             "Monthly Savings Goal",
             min_value=0.0,
-            value=float(budget_settings["savings_goal"]{})
+            value=float(budget_settings["savings_goal"]),
+            step=10.0
         )
 
 
