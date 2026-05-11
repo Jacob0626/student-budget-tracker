@@ -117,7 +117,7 @@ def load_budget_settings() -> dict:
         "category_budgets": {
             "Food": 200.0,
             "Gas": 120.0,
-            "Groceries": 2
+            "Groceries": 250.0
         }
     }
 
